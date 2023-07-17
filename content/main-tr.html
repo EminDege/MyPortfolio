@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:wght@500&family=Raleway:wght@600&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Emin Dege</title>
+</head>
+
+<body>
+    <nav id="nav" class="py-0 navbar navbar-expand-lg border-dark navBorder">
+        <a class="navbar-brand" href="#">Emin Dege</a>
+        <button id="navbartoggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <span></span><span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="#">Hakkımda</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#mainSection2">Beceriler</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link mr-3" href="#mainSection3">Diğer</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="./contact-tr.html">İletişim</a>
+                </li>
+                <li class="nav-item py-3 pl-2">
+                    <div class="dropdown">
+                        <button id="flag" class="icon" onclick="toggleDropdown()"><i
+                                class="fa-solid fa-flag fa-lg"></i></button>
+                        <ul class="dropdown-menu" style="min-width: 6rem;" id="dropdownMenu">
+                            <li><a href="#"> Türkçe </a></li>
+                            <li><a href="../main.html"> English </a></li>
+                            <li class="disabled">Deutsch</li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="moon" class="nav-item pl-2 pr-2">
+                    <div id="iconContainer" class="pt-3 mb-3">
+                        <i id="icon1" class="fa-solid fa-sun fa-lg" onclick="toggleIcons()" style="display: none;"></i>
+                        <i id="icon2" class="fa-solid fa-moon fa-lg" onclick="toggleIcons()"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="mainSection1" class="lightMainColor p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <h1>Selam, Ben Emin Dege</h1>
+                    <h3 id="mission"> Front-End Developer</h3><br>
+                    <p>Kişisel gelişimi kendisine misyon edinmiş, her geçen gün bir öncekinden
+                        daha bilgili olmayı hedefleyen, araştırmacı, meraklı, takım çalışmasına
+                        yatkın bir tasarımcıyım</p>
+                    <a href="./CV.pdf" download class="my-button" style="text-decoration: none;" target="_blank"
+                        rel="noopener noreferrer">CV'mi İndir</a>
+                </div>
+                <div class="col-md-6 ">
+                    <img id="photo" class="img-thumbnail w-100 rounded-circle float-right" src="photo.png"
+                        alt="emin dege">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br id="mainSection2"><br><br><br><br><br><br><br>
+    <section id="skills">
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col-md-4">
+                    <img class="img-thumbnail w-100" src="photo2.jpg" alt="emin dege">
+                </div>
+                <div class="col-md-8" style="height: 300px;">
+                    <h2 class="mb-5 ">Beceriler</h2>
+                    <div class="tab-titles">
+                        <span class="tab-links active-link" onclick="opentab('programming')">Programlama</span>
+                        <span class="tab-links" onclick="opentab('applications')">Uygulamalar</span>
+                        <span class="tab-links" onclick="opentab('languages')">Diller</span>
+                    </div> <br>
+                    <div class="tab-contents active-tab" id="programming">
+                        <ul>
+                            <div class="row">
+                                <div id="skills1" class="col-md-6  pr-4">
+                                    <li><span>HTML</span></li>
+                                    <li><span>CSS - Bootstrap</span></li>
+                                    <li><span>Javascript</span></li>
+                                    <li><span>React.js</span></li>
+                                </div>
+                                <div id="skills2" class="col-md-6  pl-4">
+                                    <li><span>UI/UX Design</span></li>
+                                    <li><span>Responsive Design</span></li>
+                                    <li><span>Git</span></li>
+                                    <li><span>Python</span></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="applications">
+                        <ul>
+                            <li><span>MS Offices</span></li>
+                            <li><span>Adobe Photoshop CC</span></li>
+                            <li><span>Adobe After Effects</span></li>
+                            <li><span>Autocad</span></li>
+                            <li><span>Rhino</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>Türkçe (Ana Dil)</span></li>
+                            <li><span>İngilizce (İleri Düzey)</span></li>
+                            <li><span>Almanca (Başlangıç)</span></li>
+                            <li><span>İşaret Dili (Başlangıç)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="container">
+            <div class="row text-center" id="mainSection3">
+                <div id="educationBlock" class="col-md-4 border2 lightMainColor blocksOfOther">
+                    <div>
+                        <h3>İstanbul Teknik Üniversitesi</h3>
+                        <h4>Gemi İnşaatı ve Gemi Makineleri Mühendisliği</h4>
+                        <p>09.2018 - 06.2023 <br> 3/4 <br> İstanbul , Türkiye</p>
+                        <h3 class="border3">Tülay Başaran Anadolu Lisesi</h3>
+                        <p>09.2013 - 06.2017 <br> 86/100 <br> Samsun , Türkiye</p>
+                        <h3 class="border3">Sertifikalar</h3>
+                        <p>Microsoft İleri Excel Eğitimi (<span>CBILAB</span>) <br>
+                            Türk İşaret Dili Eğitimi (<span>UTGD</span>) <br>
+                            Stres ve Zaman YÖnetimi (<span>CBILAB</span>) <br>
+                            Sürücü Belgesi (<span>B SINIFI</span>)</p>
+                    </div>
+                    <div class="layer">
+                        <h2 style="color: #FFE1C6;">EĞİTİM</h2>
+                    </div>
+                </div>
+                <div id="experienceBlock" class="col-md-3 border2 lightMainColor py-4 blocksOfOther">
+                    <div>
+                        <h3 class="pt-0">T.C
+                            Ulaştırma ve Altyapı Bakanlığı</h3>
+                        <h4>Tuzla Bölge Liman Başkanlığı</h4>
+                        <p class="pb-3">Stajyer<br>08.2022-09.2022 <br> İstanbul, Türkiye</p>
+                        <h3 class="border3 pt-4">Ares Tersanesi</h3>
+                        <p class="pb-3">Stajyer<br>07.2022-08.2022 <br> Antalya, Türkiye</p>
+                        <h3 class="border3 pt-4">Beşiktaş Tersanesi</h3>
+                        <p class="pb-3">Stajyer<br>02.2022-02.2022 <br> Yalova, Türkiye</p>
+                    </div>
+                    <div class="layer">
+                        <h2 style="color: #FFE1C6;">DENEYİM</h2>
+                    </div>
+                </div>
+                <div id="referancesBlock" class="col-md-4 border2 lightMainColor blocksOfOther">
+                    <div>
+                        <h3>Seyitahmet Genç</h3>
+                        <h4>Back-End Developer (Bilyoner.com)</h4>
+                        <p>Tel: +90-553-6904096 <br> E-mail: gencseyitahmet@gmail.com</p>
+                        <h3 class="border3">Orhan Kapucı</h3>
+                        <h4>Surveyor (Tuzla Bölge Liman Başkanlığı)</h4>
+                        <p>Tel: +90-505-6023116 <br> E-mail: orkap2@gmail.com</p>
+                        <h3 class="border3">Alparslan Uca</h3>
+                        <h4>Üretim Mühendisi (Damen Shipyard)</h4>
+                        <p>Tel: +90-531-9339249 <br> E-mail: ucaalparslan@gmail.com</p>
+                    </div>
+                    <div class="layer">
+                        <h2 style="color: #FFE1C6;">REFERANSLAR</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7be1dffba6.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
