@@ -32,7 +32,10 @@
                     <a class="nav-link" href="#mainSection2">Beceriler</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link mr-3" href="#mainSection3">Diğer</a>
+                    <a class="nav-link" href="#mainSection3">Diğer</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link mr-3" href="#carousel">Projeler</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="./contact-tr.html">İletişim</a>
@@ -70,7 +73,7 @@
                         rel="noopener noreferrer">CV'mi İndir</a>
                 </div>
                 <div class="col-md-6 ">
-                    <img id="photo" class="img-thumbnail w-100 rounded-circle float-right" src="photo.png"
+                    <img id="photo" class="img-thumbnail w-100 rounded-circle float-right" src="photo.jpg"
                         alt="emin dege">
                 </div>
             </div>
@@ -185,6 +188,73 @@
         </div>
     </section>
     <br><br><br><br><br><br><br><br><br><br>
+    <section
+      id="carousel"
+      class="container"
+      style="display: flex; justify-content: center"
+    >
+      <div
+        style="width: 90%"
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <a href="./Draw/index.html">
+              <img class="w-100" src="./content/draw.png"/>
+              <div class="carousel-caption d-none d-md-block">
+                <p>React.js ile yazılmış Çekiliş Sitesi</p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./cwc/index.html">
+              <img class="w-100" src="./content/cwc.png"/>
+              <div class="carousel-caption d-none d-md-block">
+                <p>React.js ile yazılmış kur hesabı, hava durumu ve saat sitesi </p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="./pokemon/index.html">
+              <img class="w-100" src="./content/pokemon.png"/>
+              <div class="carousel-caption d-none d-md-block">
+                <p>React.js ile yazılmış pokemon inceleme sitesi</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

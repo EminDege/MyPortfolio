@@ -1,198 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="content/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:wght@500&family=Raleway:wght@600&family=Roboto:wght@500&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="content/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:wght@500&family=Raleway:wght@600&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Emin Dege</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="nav" class="py-0 navbar navbar-expand-lg border-dark navBorder">
-        <a class="navbar-brand" href="#">Emin Dege</a>
-        <button id="navbartoggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <span></span><span></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active ">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#mainSection2">Skills</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link mr-3" href="#mainSection3">Other</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="./content/contact.html">Contact</a>
-                </li>
-                <li class="nav-item py-3 pl-2">
-                    <div class="dropdown">
-                        <button id="flag" class="icon" onclick="toggleDropdown()"><i
-                                class="fa-solid fa-flag fa-lg"></i></button>
-                        <ul class="dropdown-menu" style="min-width: 6rem;" id="dropdownMenu">
-                            <li><a href="./content/main-tr.html"> Türkçe </a></li>
-                            <li><a href="#"> English</a></li>
-                            <li class="disabled">Deutsch</li>
-                        </ul>
-                    </div>
-                </li>
-                <li id="moon" class="nav-item pl-2 pr-2">
-                    <div id="iconContainer" class="pt-3 mb-3">
-                        <i id="icon1" class="fa-solid fa-sun fa-lg" onclick="toggleIcons()" style="display: none;"></i>
-                        <i id="icon2" class="fa-solid fa-moon fa-lg" onclick="toggleIcons()"></i>
-                    </div>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="#">Emin Dege</a>
+      <button
+        id="navbartoggler"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span> <span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mainSection2">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mainSection3">Other</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-3" href="#carousel">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./content/contact.html">Contact</a>
+          </li>
+          <li class="nav-item py-3 pl-2">
+            <div class="dropdown">
+              <button id="flag" class="icon" onclick="toggleDropdown()">
+                <i class="fa-solid fa-flag fa-lg"></i>
+              </button>
+              <ul
+                class="dropdown-menu"
+                style="min-width: 6rem"
+                id="dropdownMenu"
+              >
+                <li><a href="./content/main-tr.html"> Türkçe </a></li>
+                <li><a href="#"> English</a></li>
+                <li class="disabled">Deutsch</li>
+              </ul>
+            </div>
+          </li>
+          <li id="moon" class="nav-item pl-2 pr-2">
+            <div id="iconContainer" class="pt-3 mb-3">
+              <i
+                id="icon1"
+                class="fa-solid fa-sun fa-lg"
+                onclick="toggleIcons()"
+                style="display: none"
+              ></i>
+              <i
+                id="icon2"
+                class="fa-solid fa-moon fa-lg"
+                onclick="toggleIcons()"
+              ></i>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
     <section id="mainSection1" class="lightMainColor p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-6">
-                    <h1>Hi, I am Emin Dege</h1>
-                    <h3 id="mission"> Front-End Developer</h3><br>
-                    <p>I am a researcher, curious, team-worker, who has made personal development a mission and aims to
-                        be more knowledgeable than the previous day.</p>
-                    <a href="./content/CV.pdf" download class="my-button" style="text-decoration: none;" target="_blank"
-                        rel="noopener noreferrer">Download My Resume</a>
-                </div>
-                <div class="col-md-6 ">
-                    <img id="photo" class="img-thumbnail w-100 rounded-circle float-right" src="content/photo.png"
-                        alt="emin dege">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <h1>Hi, I am Emin Dege</h1>
+            <h3 id="mission">Front-End Developer</h3>
+            <br />
+            <p>
+              I am a researcher, curious, team-worker, who has made personal
+              development a mission and aims to be more knowledgeable than the
+              previous day.
+            </p>
+            <a
+              href="./content/CV.pdf"
+              download
+              class="my-button"
+              style="text-decoration: none"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download My Resume</a
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              id="photo"
+              class="img-thumbnail w-100 rounded-circle float-right"
+              src="content/photo.jpg"
+              alt="emin dege"
+            />
+          </div>
         </div>
+      </div>
     </section>
-    <br><br id="mainSection2"><br><br><br><br><br><br><br>
+    <br /><br id="mainSection2" /><br /><br /><br /><br /><br /><br /><br />
     <section id="skills">
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col-md-4">
-                    <img class="img-thumbnail w-100" src="content/photo2.jpg" alt="emin dege">
-                </div>
-                <div class="col-md-8" style="height: 300px;">
-                    <h2 class="mb-5 ">Skills</h2>
-                    <div class="tab-titles">
-                        <span class="tab-links active-link" onclick="opentab('programming')">Programming</span>
-                        <span class="tab-links" onclick="opentab('applications')">Applications</span>
-                        <span class="tab-links" onclick="opentab('languages')">Languages</span>
-                    </div> <br>
-                    <div class="tab-contents active-tab" id="programming">
-                        <ul>
-                            <div class="row">
-                                <div id="skills1" class="col-md-6  pr-4">
-                                    <li><span>HTML</span></li>
-                                    <li><span>CSS - Bootstrap</span></li>
-                                    <li><span>Javascript</span></li>
-                                    <li><span>React.js</span></li>
-                                </div>
-                                <div id="skills2" class="col-md-6  pl-4">
-                                    <li><span>UI/UX Design</span></li>
-                                    <li><span>Responsive Design</span></li>
-                                    <li><span>Git</span></li>
-                                    <li><span>Python</span></li>
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="tab-contents " id="applications">
-                        <ul>
-                            <li><span>MS Offices</span></li>
-                            <li><span>Adobe Photoshop CC</span></li>
-                            <li><span>Adobe After Effects</span></li>
-                            <li><span>Autocad</span></li>
-                            <li><span>Rhino</span></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="languages">
-                        <ul>
-                            <li><span>Turkish (Native)</span></li>
-                            <li><span>English (Expert)</span></li>
-                            <li><span>German (Beginner)</span></li>
-                            <li><span>Sign languages (Beginner)</span></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col-md-4">
+            <img
+              class="img-thumbnail w-100"
+              src="content/photo2.jpg"
+              alt="emin dege"
+            />
+          </div>
+          <div class="col-md-8" style="height: 300px">
+            <h2 class="mb-5">Skills</h2>
+            <div class="tab-titles">
+              <span
+                class="tab-links active-link"
+                onclick="opentab('programming')"
+                >Programming</span
+              >
+              <span class="tab-links" onclick="opentab('applications')"
+                >Applications</span
+              >
+              <span class="tab-links" onclick="opentab('languages')"
+                >Languages</span
+              >
             </div>
+            <br />
+            <div class="tab-contents active-tab" id="programming">
+              <ul>
+                <div class="row">
+                  <div id="skills1" class="col-md-6 pr-4">
+                    <li><span>HTML</span></li>
+                    <li><span>CSS - Bootstrap</span></li>
+                    <li><span>Javascript</span></li>
+                    <li><span>React.js</span></li>
+                  </div>
+                  <div id="skills2" class="col-md-6 pl-4">
+                    <li><span>UI/UX Design</span></li>
+                    <li><span>Responsive Design</span></li>
+                    <li><span>Git</span></li>
+                    <li><span>Python</span></li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <div class="tab-contents" id="applications">
+              <ul>
+                <li><span>MS Offices</span></li>
+                <li><span>Adobe Photoshop CC</span></li>
+                <li><span>Adobe After Effects</span></li>
+                <li><span>Autocad</span></li>
+                <li><span>Rhino</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="languages">
+              <ul>
+                <li><span>Turkish (Native)</span></li>
+                <li><span>English (Expert)</span></li>
+                <li><span>German (Beginner)</span></li>
+                <li><span>Sign languages (Beginner)</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <section>
-        <div class="container">
-            <div class="row text-center" id="mainSection3">
-                <div id="educationBlock" class="col-md-4 border2 lightMainColor blocksOfOther">
-                    <div>
-                        <h3>Istanbul Technical University</h3>
-                        <h4>Naval Architecture</h4>
-                        <p>09.2018 - 06.2023 <br> 3/4 <br> Istanbul , Turkey</p>
-                        <h3 class="border3">Tülay Başaran High School</h3>
-                        <p>09.2013 - 06.2017 <br> 86/100 <br> Samsun , Turkey</p>
-                        <h3 class="border3">Certificates</h3>
-                        <p>Microsoft advanced Excel education (<span>CBILAB</span>) <br>
-                            Turkish sign language education (<span>UTGD</span>) <br>
-                            Stress and time management (<span>CBILAB</span>) <br>
-                            Driving Licence (<span>B Class</span>)</p>
-                    </div>
-                    <div class="layer">
-                        <h2 style="color: #FFE1C6;">EDUCATION</h2>
-                    </div>
-                </div>
-                <div id="experienceBlock" class="col-md-3 border2 lightMainColor py-4 blocksOfOther">
-                    <div>
-                        <h3 class="pt-0">T.C
-                            Ministry of Transport and Infrastructure</h3>
-                        <h4>Tuzla region port authority</h4>
-                        <p class="pb-3">Intern<br>08.2022-09.2022 <br> Istanbul, Turkey</p>
-                        <h3 class="border3 pt-4">Ares Shipyard</h3>
-                        <p class="pb-3">Intern<br>07.2022-08.2022 <br> Antalya, Turkey</p>
-                        <h3 class="border3 pt-4">Beşiktaş Shipyard</h3>
-                        <p class="pb-3">Intern<br>02.2022-02.2022 <br> Yalova, Turkey</p>
-                    </div>
-                    <div class="layer">
-                        <h2 style="color: #FFE1C6;">EXPERIENCE</h2>
-                    </div>
-                </div>
-                <div id="referancesBlock" class="col-md-4 border2 lightMainColor blocksOfOther">
-                    <div>
-                        <h3>Seyitahmet Genç</h3>
-                        <h4>Back-End Developer (Bilyoner.com)</h4>
-                        <p>Tel: +90-553-6904096 <br> E-mail: gencseyitahmet@gmail.com</p>
-                        <h3 class="border3">Orhan Kapucı</h3>
-                        <h4>Surveyor (Tuzla region port authority)</h4>
-                        <p>Tel: +90-505-6023116 <br> E-mail: orkap2@gmail.com</p>
-                        <h3 class="border3">Alparslan Uca</h3>
-                        <h4>Manufacturing Engineer (Damen Shipyard)</h4>
-                        <p>Tel: +90-531-9339249 <br> E-mail: ucaalparslan@gmail.com</p>
-                    </div>
-                    <div class="layer">
-                        <h2 style="color: #FFE1C6;">REFERENCES</h2>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row text-center" id="mainSection3">
+          <div
+            id="educationBlock"
+            class="col-md-4 border2 lightMainColor blocksOfOther"
+          >
+            <div>
+              <h3>Istanbul Technical University</h3>
+              <h4>Naval Architecture</h4>
+              <p>
+                09.2018 - 06.2023 <br />
+                3/4 <br />
+                Istanbul , Turkey
+              </p>
+              <h3 class="border3">Tülay Başaran High School</h3>
+              <p>
+                09.2013 - 06.2017 <br />
+                86/100 <br />
+                Samsun , Turkey
+              </p>
+              <h3 class="border3">Certificates</h3>
+              <p>
+                Microsoft advanced Excel education (<span>CBILAB</span>) <br />
+                Turkish sign language education (<span>UTGD</span>) <br />
+                Stress and time management (<span>CBILAB</span>) <br />
+                Driving Licence (<span>B Class</span>)
+              </p>
             </div>
+            <div class="layer">
+              <h2 style="color: #ffe1c6">EDUCATION</h2>
+            </div>
+          </div>
+          <div
+            id="experienceBlock"
+            class="col-md-3 border2 lightMainColor py-4 blocksOfOther"
+          >
+            <div>
+              <h3 class="pt-0">T.C Ministry of Transport and Infrastructure</h3>
+              <h4>Tuzla region port authority</h4>
+              <p class="pb-3">
+                Intern<br />08.2022-09.2022 <br />
+                Istanbul, Turkey
+              </p>
+              <h3 class="border3 pt-4">Ares Shipyard</h3>
+              <p class="pb-3">
+                Intern<br />07.2022-08.2022 <br />
+                Antalya, Turkey
+              </p>
+              <h3 class="border3 pt-4">Beşiktaş Shipyard</h3>
+              <p class="pb-3">
+                Intern<br />02.2022-02.2022 <br />
+                Yalova, Turkey
+              </p>
+            </div>
+            <div class="layer">
+              <h2 style="color: #ffe1c6">EXPERIENCE</h2>
+            </div>
+          </div>
+          <div
+            id="referancesBlock"
+            class="col-md-4 border2 lightMainColor blocksOfOther"
+          >
+            <div>
+              <h3>Seyitahmet Genç</h3>
+              <h4>Back-End Developer (Bilyoner.com)</h4>
+              <p>
+                Tel: +90-553-6904096 <br />
+                E-mail: gencseyitahmet@gmail.com
+              </p>
+              <h3 class="border3">Orhan Kapucı</h3>
+              <h4>Surveyor (Tuzla region port authority)</h4>
+              <p>
+                Tel: +90-505-6023116 <br />
+                E-mail: orkap2@gmail.com
+              </p>
+              <h3 class="border3">Alparslan Uca</h3>
+              <h4>Manufacturing Engineer (Damen Shipyard)</h4>
+              <p>
+                Tel: +90-531-9339249 <br />
+                E-mail: ucaalparslan@gmail.com
+              </p>
+            </div>
+            <div class="layer">
+              <h2 style="color: #ffe1c6">REFERENCES</h2>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <section
+      id="carousel"
+      class="container"
+      style="display: flex; justify-content: center"
+    >
+      <div
+        style="width: 90%"
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <a href="">
+              <img class="w-100" src="./content/draw.png" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <p>Drawing Website With React.js</p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img class="w-100" src="./content/cwc.png" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <p></p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="">
+              <img class="w-100" src="./content/pokemon.png" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <p>...</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/7be1dffba6.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7be1dffba6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="content/main.js"></script>
-</body>
-
+  </body>
 </html>
